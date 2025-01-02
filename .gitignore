@@ -1,7 +1,20 @@
+# the 00-creating-train-test-splits.ipynb notebook creates the train-test splits here
+# don't commit these files
 data/
-Stanford40*
+
+# Below is the directory structure of the Stanford40 dataset
+# JPEGImages subfolder contains the images, don't commit them
+Stanford40/**/*.jpg
+# We don't use the Matlab annotations, so don't commit them even if they were unzipped here
+Stanford40/MatlabAnnotations
+# The XML annotations are used, but still we don't commit them
+Stanford40/**/*.xml
+# Text files from ImageSplits folder are used to create the train-test splits, don't commit them
+Stanford40/**/*.txt
 
 __pycache__/
 .~lock*
 
+# The models are saved here, don't commit them, they are binaries and too large to be stored in Git
+# 01-*.ipynb and 02-*.ipynb notebooks save the models here
 models/*.pth
