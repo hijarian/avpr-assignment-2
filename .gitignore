@@ -1,0 +1,7 @@
+data/
+Stanford40*
+
+__pycache__/
+.~lock*
+
+models/*.pth
